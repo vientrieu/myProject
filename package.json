@@ -1,0 +1,13 @@
+{
+    "name": "20A09-EC",
+    "version": "1.0.0",
+    "description": "Do an mon hoc Thuong mai dien tu",
+    "main": "server.js",
+    "scripts": {
+        "dev": "nodemon server.js"
+    },
+    "keywords": [],
+    "author": "20A09",
+    "license": "ISC",
+    "dependencies": {}
+}

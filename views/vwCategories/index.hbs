@@ -1,0 +1,46 @@
+<div class="container pt-5 pb-5">
+  <div class="row text-center">
+    <h2>
+      Categories
+    </h2>
+  </div>
+  <div class="row">
+    {{#if this.empty}}
+      <div class="card-body">
+        <p class="card-text">
+          Không có dữ liệu.
+        </p>
+      </div>
+    {{else}}
+      <table class="table table-striped table-hover table-bordered">
+        <thead>
+          <tr>
+            <th scope="col" class="text-center">ID</th>
+            <th scope="col" class="">Danh mục</th>
+            <th scope="col" class="text-center">Số lượng</th>
+            <th scope="col" class="text-right">
+              <a class="btn btn-outline-success" href="/admin/categories/add" role="button">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                Thêm danh mục
+              </a>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each this.categories}}
+            <tr>
+              <th scope="row" class="text-center">{{CatID}}</th>
+              <td>{{CatName}}</td>
+              <td class="text-center">{{num_of_products}}</td>
+              <td class="text-right">
+                <a class="btn btn-sm btn-primary" href="/admin/categories/edit/{{CatID}}" role="button">
+                  <i class="far fa-edit" aria-hidden="true"></i>
+                </a>
+              </td>
+            </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    {{/if}}
+  </div>
+</div>

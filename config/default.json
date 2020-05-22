@@ -1,0 +1,23 @@
+{
+    "mysql": {
+        "connectionLimit": 50,
+        "host": "localhost",
+        "port": 3306,
+        "user": "root",
+        "password": "12345678",
+        "database": "qlbh"
+    },
+    "paginate": {
+        "limit": 4
+    },
+    "permission": {
+        "admin": 2,
+        "seller": 1,
+        "bidder": 0
+    },
+    "status": {
+        "win": 1,
+        "running": 0,
+        "ban": -1
+    }
+}
